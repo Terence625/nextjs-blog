@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 
-const postsDirectory = path.join(process.cwd(), "posts");
+const postsDirectory = path.join(process.cwd(), "src/posts");
 
 export function getSortedPostsData() {
   // Get file names under /posts
@@ -19,6 +19,7 @@ export function getSortedPostsData() {
 
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
+    const number = 1;
 
     // Combine the data with the id
     return {
