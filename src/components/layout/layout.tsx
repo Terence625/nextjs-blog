@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../../styles/layout.module.css";
 import utilStyles from "../../styles/utils.module.css";
 import Link from "next/link";
@@ -17,20 +16,13 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
         <meta name="description" content="Terence Tian's blog" />
         <title />
       </Head>
-      <header className={styles.header}>
-        {home
-          ? Header({
-              name,
-              profileHeight: 144,
-              profileWidth: 144,
-              titleSize: utilStyles.heading2Xl,
-            })
-          : Header({
-              name,
-              profileHeight: 108,
-              profileWidth: 108,
-              titleSize: utilStyles.headingLg,
-            })}
+      <header className={styles.header} >
+        {Header({
+          name,
+          profileHeight: 50,
+          profileWidth: 50,
+          titleSize: utilStyles.headingLg,
+        })}
       </header>
       <main>{children}</main>
       {!home && (

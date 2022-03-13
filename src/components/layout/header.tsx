@@ -18,7 +18,7 @@ export default function Header(props: {
         width={props.profileWidth}
         alt={props.name}
       />
-      <h1 className={props.titleSize}>{props.name}</h1>
+      <h1 className={`${props.titleSize} ${utilStyles.paddingLeft10px}`}>{props.name}</h1>
     </>
   );
 }
