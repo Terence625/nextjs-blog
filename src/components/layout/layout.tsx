@@ -17,12 +17,14 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
         <title />
       </Head>
       <header className={styles.header} >
-        {Header({
-          name,
-          profileHeight: 50,
-          profileWidth: 50,
-          titleSize: utilStyles.headingLg,
-        })}
+        <Link href="/">
+          {Header({
+            name,
+            profileHeight: 50,
+            profileWidth: 50,
+            titleSize: utilStyles.headingLg,
+          })}
+        </Link>
       </header>
       <main>{children}</main>
       {!home && (
