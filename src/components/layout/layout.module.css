@@ -2,7 +2,7 @@
   padding: 0 1rem;
 }
 
-.header {
+.navbar {
   display: flex;
   flex-direction: row;
   align-items: center;

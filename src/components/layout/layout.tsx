@@ -1,9 +1,8 @@
 import Head from "next/head";
 import styles from "./layout.module.css";
-import utilStyles from "../../styles/utils.module.css";
 import Link from "next/link";
 import React from "react";
-import Header from "./header";
+import Navbar from "./navbar";
 
 const name = "Terence Tian";
 export const siteTitle = "Terence's Blog";
@@ -16,15 +15,8 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
         <meta name="description" content="Terence Tian's blog" />
         <title />
       </Head>
-      <header className={styles.header} >
-        <Link href="/">
-          {Header({
-            name,
-            profileHeight: 50,
-            profileWidth: 50,
-            titleSize: utilStyles.headingLg,
-          })}
-        </Link>
+      <header>
+        <Navbar />
       </header>
       <main>{children}</main>
       {!home && (
