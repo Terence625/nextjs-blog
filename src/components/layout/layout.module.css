@@ -2,13 +2,35 @@
   padding: 0 1rem;
 }
 
-.navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.header {
   position: sticky;
   top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
   background: white;
+  z-index: 1000;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.div {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 1024px;
+  text-align: center;
+}
+
+.navbar {
+  position: relative;
+  flex: 1;
+  height: 80px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
 }
 
 .backToHome {

@@ -15,8 +15,10 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
         <meta name="description" content="Terence Tian's blog" />
         <title />
       </Head>
-      <header>
-        <Navbar />
+      <header className={styles.header}>
+        <div className={styles.div}>
+          <Navbar />
+        </div>
       </header>
       <main>{children}</main>
       {!home && (
