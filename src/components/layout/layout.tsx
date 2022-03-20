@@ -4,12 +4,11 @@ import Link from "next/link";
 import React from "react";
 import Navbar from "./navbar";
 
-const name = "Terence Tian";
 export const siteTitle = "Terence's Blog";
 
 export default function Layout({ children, home }: { children: React.ReactNode; home?: boolean }) {
   return (
-    <div className={styles.container}>
+    <div className="page-container">
       <Head>
         <link rel="icon" href="/images/favicon.ico" />
         <meta name="description" content="Terence Tian's blog" />
