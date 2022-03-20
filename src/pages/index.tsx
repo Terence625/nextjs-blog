@@ -1,34 +1,22 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout/layout";
-import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
-import Link from "next/link";
-import Date from "../components/date/date";
 import { GetStaticProps } from "next";
-import BlogList from "../components/blogList/blogList";
+import BlogContainer from "../components/blogContainer/blogContainer";
+import {BlogListDataType} from "../components/blogContainer/blogList";
 
 export const getStaticProps: GetStaticProps = async () => {
-  const allBlogsData = getSortedPostsData();
-  return {
-    props: { allBlogsData },
-  };
+  const blogListData = getSortedPostsData();
+  return { props: { blogListData } };
 };
 
-export default function Home({
-  allBlogsData,
-}: {
-  allBlogsData: Array<{
-    date: string;
-    title: string;
-    id: string;
-  }>;
-}) {
+export default function Home({ blogListData }: { blogListData: BlogListDataType }) {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <BlogList allBlogsData={allBlogsData} />
+      <BlogContainer blogContainerData={blogListData} home />
     </Layout>
   );
 }
