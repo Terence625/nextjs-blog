@@ -1,5 +1,8 @@
 import utilStyles from "../../styles/utils.module.css";
 import Date from "../date/date";
+import styles from "./blogContainer.module.css";
+import Link from "next/link";
+import React from "react";
 
 export type BlogContentDataType = {
   title: string;
@@ -15,6 +18,11 @@ export default function BlogContent({ blogContentData }: { blogContentData: Blog
         <Date dateString={blogContentData.date} />
       </div>
       <div dangerouslySetInnerHTML={{ __html: blogContentData.contentHtml }} />
+      <div className={styles.backToHome}>
+        <Link href="/">
+          <a>← Back to home</a>
+        </Link>
+      </div>
     </article>
   );
 }
