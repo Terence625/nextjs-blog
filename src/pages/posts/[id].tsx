@@ -16,6 +16,7 @@ export default function Post({ blogContentData }: { blogContentData: BlogContent
   );
 }
 
+//All the paths will be pre-rendered
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllPostsIds();
   return {
@@ -24,7 +25,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const blogContentData = await getPostData(params.id as string);
+export const getStaticProps: GetStaticProps = async ({ params}) => {
+  const blogContentData = await getPostData(params?.id as string);
   return { props: { blogContentData } };
 };
