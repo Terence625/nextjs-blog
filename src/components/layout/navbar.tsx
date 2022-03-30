@@ -19,11 +19,12 @@ export default function Navbar() {
             width="50"
             alt={name}
           />
+          <h1 className={` ${utilStyles.paddingLeft10px}`}>{name}</h1>
         </a>
       </Link>
       <Link href="/">
-        <a className={utilStyles.colorInherit} style={{ textDecoration: "none" }}>
-          <h1 className={`${utilStyles.headingLg} ${utilStyles.paddingLeft10px}`}>{name}</h1>
+        <a>
+          <h1>{name}</h1>
         </a>
       </Link>
     </nav>

@@ -2,9 +2,6 @@
 .header {
   position: sticky;
   top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   -webkit-box-align: center;
   align-items: center;
   width: 100%;
@@ -13,7 +10,14 @@
   border-bottom: 1px solid #eaeaea;
 }
 
-.div {
+.navbar {
+  flex: 1;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
@@ -21,12 +25,7 @@
   text-align: center;
 }
 
-.navbar {
-  position: relative;
-  flex: 1;
-  height: 80px;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
+.navbar a {
+  color: inherit;
+  text-decoration: none;
 }
-

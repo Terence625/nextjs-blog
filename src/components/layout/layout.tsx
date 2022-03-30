@@ -14,9 +14,7 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
         <title />
       </Head>
       <header className={styles.header}>
-        <div className={styles.div}>
-          <Navbar />
-        </div>
+        <Navbar />
       </header>
       <main>{children}</main>
     </div>
