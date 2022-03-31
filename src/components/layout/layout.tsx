@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "./layout.module.css";
 import React from "react";
 import Navbar from "./navbar";
+import Profile from "./profile";
 
 export const siteTitle = "Terence's Blog";
 
@@ -14,7 +15,10 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
         <title />
       </Head>
       <header className={styles.header}>
-        <Navbar />
+        <div className={styles.headerContent}>
+          <Profile />
+          <Navbar />
+        </div>
       </header>
       <main>{children}</main>
     </div>
