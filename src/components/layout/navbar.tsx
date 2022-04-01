@@ -8,11 +8,14 @@ export default function Navbar() {
       <Link href="/">
         <a>Home</a>
       </Link>
-      <Link href="/">
-        <a>Blog</a>
+      <Link href="/blogs">
+        <a>Blogs</a>
       </Link>
-      <Link href="/">
-        <a>Game</a>
+      <Link href="/games">
+        <a>Games</a>
+      </Link>
+      <Link href="/about">
+        <a>About</a>
       </Link>
     </nav>
   );

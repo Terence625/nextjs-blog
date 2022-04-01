@@ -13,7 +13,7 @@ export default function BlogList({ blogListData }: { blogListData: BlogListDataT
     <ul className={utilStyles.list}>
       {blogListData.map(({ id, date, title }) => (
         <li className={utilStyles.listItem} key={id}>
-          <Link href={`/posts/${id}`}>
+          <Link href={`/blogs/${id}`}>
             <a>{title}</a>
           </Link>
           <br />
