@@ -14,7 +14,7 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
         <meta name="description" content="Terence Tian's blog" />
         <title />
       </Head>
-      <header className={styles.header}>
+      <header>
         <div className={styles.headerContent}>
           <Profile />
           <Navbar />

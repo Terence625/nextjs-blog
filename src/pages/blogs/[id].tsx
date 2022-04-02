@@ -5,7 +5,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import BlogContainer from "../../components/blogContainer/blogContainer";
 import {BlogContentDataType} from "../../components/blogContainer/blogContent";
 
-export default function Post({ blogContentData }: { blogContentData: BlogContentDataType }) {
+export default function Blogs({ blogContentData }: { blogContentData: BlogContentDataType }) {
   return (
     <Layout>
       <Head>

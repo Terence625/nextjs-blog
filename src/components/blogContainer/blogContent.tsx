@@ -19,8 +19,8 @@ export default function BlogContent({ blogContentData }: { blogContentData: Blog
       </div>
       <div dangerouslySetInnerHTML={{ __html: blogContentData.contentHtml }} />
       <div className={styles.backToHome}>
-        <Link href="/">
-          <a>← Back to home</a>
+        <Link href="/blogs">
+          <a>← Back</a>
         </Link>
       </div>
     </article>

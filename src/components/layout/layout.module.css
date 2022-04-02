@@ -1,14 +1,4 @@
-.header {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background: white;
-  height: 60px;
-  border-bottom: 1px solid #eaeaea;
-}
-
 .headerContent {
-  height: inherit;
   display: flex;
   flex-direction: row;
   margin: 0 auto;

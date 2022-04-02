@@ -21,8 +21,20 @@ a:hover {
   text-decoration: underline;
 }
 
-main {
+header {
+  height: 60px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #eaeaea;
+}
 
+main {
+  -webkit-overflow-scrolling: touch;
+  flex: auto;
+  background-color: #fafafa;
+  min-height:100vh;
 }
 
 img {
