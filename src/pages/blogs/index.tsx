@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../../components/layout/layout";
+import Layout from "../../components/layout/layout";
 import { getSortedPostsData } from "../../lib/posts";
 import { GetStaticProps } from "next";
 import BlogContainer from "../../components/blogContainer/blogContainer";
@@ -14,7 +14,7 @@ export default function Blogs({ blogListData }: { blogListData: BlogListDataType
   return (
     <Layout>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Terence's blogs</title>
       </Head>
       <BlogContainer blogContainerData={blogListData} home />
     </Layout>

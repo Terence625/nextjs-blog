@@ -1,11 +1,14 @@
 import Layout from "../../components/layout/layout";
+import Head from "next/head";
+import AboutContainer from "../../components/aboutContainer/aboutContainer";
 
 export default function About() {
   return (
     <Layout>
-      <h1 />
-      This is about page
-      <h1 />
+      <Head>
+        <title>Terence's about</title>
+      </Head>
+      <AboutContainer />
     </Layout>
   );
 }
