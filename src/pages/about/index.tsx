@@ -6,7 +6,7 @@ export default function About() {
   return (
     <Layout>
       <Head>
-        <title>Terence's about</title>
+        <title>{"Terence's about"}</title>
       </Head>
       <AboutContainer />
     </Layout>

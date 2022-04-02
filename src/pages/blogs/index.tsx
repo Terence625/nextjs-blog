@@ -14,7 +14,7 @@ export default function Blogs({ blogListData }: { blogListData: BlogListDataType
   return (
     <Layout>
       <Head>
-        <title>Terence's blogs</title>
+        <title>{"Terence's blogs"}</title>
       </Head>
       <BlogContainer blogContainerData={blogListData} home />
     </Layout>

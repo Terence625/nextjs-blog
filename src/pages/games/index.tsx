@@ -6,7 +6,7 @@ export default function Games() {
   return (
     <Layout>
       <Head>
-        <title>Terence's games</title>
+        <title>{"Terence's games"}</title>
       </Head>
       <GameContainer />
     </Layout>
