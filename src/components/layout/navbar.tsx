@@ -11,12 +11,15 @@ export default function Navbar() {
       <Link href="/blogs">
         <a>Blogs</a>
       </Link>
-      <Link href="/games">
-        <a>Games</a>
+      <Link href="/tools">
+        <a>Tools</a>
       </Link>
       <Link href="/about">
         <a>About</a>
       </Link>
+      <a target="_blank" href="https://github.com/Terence625" rel="noopener noreferrer" className={styles.icon}>
+        <i className="fa fa-github"/>
+      </a>
     </nav>
   );
 }

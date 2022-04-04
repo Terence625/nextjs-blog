@@ -9,7 +9,8 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
     <div className="page-container">
       <Head>
         <link rel="icon" href="/images/favicon.ico" />
-        <meta name="description" content="Terence Tian's blog" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+        <meta name="description" content="Terence Tian's website" />
         <title />
       </Head>
       <header>

@@ -1,4 +1,5 @@
 .headerContent {
+  height: 100%;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
@@ -38,4 +39,10 @@
   flex-direction: row;
   color: inherit;
   align-items: center;
+  margin-left: 1rem;
+}
+
+.navbar .icon {
+  margin-left: 0;
+  text-decoration: none;
 }
